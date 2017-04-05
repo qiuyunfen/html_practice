@@ -47,7 +47,7 @@
             font-weight: 700;
         }
         .education {
-            background-color: white;
+            background-color: #ffffff;
             position: relative;
             overflow: hidden;
         }
@@ -65,9 +65,26 @@
             display: block;
             background: linear-gradient(to bottom, #ffffff 0%, #ec7263 17%, #ec7263 80%, #ffffff 100%);
         }
+        .education-description:after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            right: 0;
+            left: -16px;
+            border: solid transparent;
+            height: 0;
+            width: 0;
+            border-right-color: #eee;
+            border-width: 8px;
+            pointer-events: none;
+        }
         #education-ul li {
-            background-color: #c7ddef;
+            background-color: #eee;
             position: relative;
+        }
+        #education-ul h4 {
+            font-size: 1.1em;
+            font-weight: 700;
         }
         .year {
             position: absolute;
@@ -119,29 +136,29 @@
                             <ul id="education-ul">
                                 <li>
                                     <div class="year">1990</div>
-                                    <div>
-                                        <p>I was born in Katowice</p>
+                                    <div class="education-description">
+                                        <h4>I was born in Katowice</h4>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, exercitationem, totam, dolores iste dolore est aut modi.</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="year">2005</div>
-                                    <div>
-                                        <p>Secondary school specializing in artistic</p>
+                                    <div class="education-description">
+                                        <h4>Secondary school specializing in artistic</h4>
                                         <p>Eos, explicabo, nam, tenetur et ab eius deserunt aspernatur ipsum ducimus quibusdam quis voluptatibus.</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="year">2009</div>
-                                    <div>
-                                        <p>First level graduation in Graphic Design</p>
+                                    <div class="education-description">
+                                        <h4>First level graduation in Graphic Design</h4>
                                         <p>Aspernatur, mollitia, quos maxime eius suscipit sed beatae ducimus quaerat quibusdam perferendis? Iusto, quibusdam asperiores unde repellat.</p>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="year">2012</div>
-                                    <div>
-                                        <p>Second level graduation in Graphic Design</p>
+                                    <div class="education-description">
+                                        <h4>Second level graduation in Graphic Design</h4>
                                         <p>Ducimus, aliquam tempore autem itaque et accusantium!</p>
                                     </div>
                                 </li>
