@@ -35,18 +35,16 @@
             color: red;
         }
         .about-me {
+            padding-left: 10px;
             background-color: white;
         }
-        .about-me p {
-            margin-left: 10px;
-        }
         .description {
-            padding-left: 10px;
             color: red;
             font-size: 20px;
             font-weight: 700;
         }
         .education {
+            padding-left: 10px;
             background-color: #ffffff;
             position: relative;
             overflow: hidden;
@@ -65,6 +63,9 @@
             display: block;
             background: linear-gradient(to bottom, #ffffff 0%, #ec7263 17%, #ec7263 80%, #ffffff 100%);
         }
+        .education-description{
+            padding: 3px;
+        }
         .education-description:after {
             content: '';
             position: absolute;
@@ -81,6 +82,7 @@
         #education-ul li {
             background-color: #eee;
             position: relative;
+            margin-bottom: 5px;
         }
         #education-ul h4 {
             font-size: 1.1em;
@@ -96,13 +98,28 @@
             font-weight: bold;
         }
         .experience {
+            padding-left: 10px;
             background-color: #ffffff;
         }
         .experience ul {
             list-style: none;
             margin-left: 100px;
         }
-
+        .company-time h5 {
+            padding-left: 10px;
+            margin-bottom: 0;
+            font-size: 1.1em;
+            font-weight: 700;
+        }
+        .company-time p {
+            padding-left: 10px;
+            font-size: 0.9em;
+        }
+        .work-experice h4 {
+            margin-bottom: 0;
+            font-size: 1.3em;
+            font-weight: 700;
+        }
     </style>
 </head>
 <body>
@@ -169,10 +186,34 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="experience">
-                            <p class="description">//EXPERIENCE</p>
+                            <p class="description"><i class="glyphicon glyphicon-bookmark"></i>&nbsp;EXPERIENCE</p>
                             <div class="row">
-                                <div class="col-lg-4"></div>
-                                <div class="col-lg-8"></div>
+                                <div class="col-lg-3">
+                                    <div class="company-time">
+                                        <h5>Google</h5>
+                                        <p>2013 - 2014</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="work-experice">
+                                        <h4>Front-end developer / php programmer</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, et, illum perferendis veritatis velit sunt similique qui magni totam harum tempore eius laboriosam accusantium necessitatibus voluptatum? Enim, itaque dignissimos quia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3">
+                                    <div class="company-time">
+                                        <h5>Twitter</h5>
+                                        <p>2012</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-9">
+                                    <div class="work-experice">
+                                        <h4>Web Developer</h4>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, nihil sit nemo voluptatem praesentium. Quia, qui facere consectetur libero asperiores fugiat consequuntur deserunt culpa repudiandae sed quidem voluptas explicabo soluta.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
