@@ -8,7 +8,9 @@
         body {
             background-color: #8c8c8c;
         }
-
+        .container {
+            background-color: #ffffff;
+        }
         .brief {
             height: 200px;
             margin-top: 50px;
@@ -36,7 +38,6 @@
         }
         .about-me {
             padding-left: 10px;
-            background-color: white;
         }
         .description {
             color: red;
@@ -45,7 +46,6 @@
         }
         .education {
             padding-left: 10px;
-            background-color: #ffffff;
             position: relative;
             overflow: hidden;
         }
@@ -58,7 +58,7 @@
             height: 100%;
             position: absolute;
             left: 35px;
-            top: 23px;
+            top: 34px;
             content: '';
             display: block;
             background: linear-gradient(to bottom, #ffffff 0%, #ec7263 17%, #ec7263 80%, #ffffff 100%);
@@ -91,15 +91,14 @@
         .year {
             position: absolute;
             top: 10px;
-            left: -47px;
+            left: -56px;
             width: 40px;
-            height: 30px;
+            height: 25px;
             background-color: #ffffff;
             font-weight: bold;
         }
         .experience {
             padding-left: 10px;
-            background-color: #ffffff;
         }
         .experience ul {
             list-style: none;
@@ -119,6 +118,39 @@
             margin-bottom: 0;
             font-size: 1.3em;
             font-weight: 700;
+        }
+        .contact {
+            padding-left: 10px;
+        }
+        .contact .contact-icon {
+            padding-right: 0;
+        }
+        .contact .contact-icon i{
+            height: 40px;
+            width: 40px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            border-right: 1px solid #eee;
+        }
+        .contact .contact-content{
+            font-size: 1.1em;
+            font-weight: 700;
+            padding-left: 0;
+            margin-left: -15px;
+        }
+        .contact .contact-content p{
+            margin-bottom: 0;
+        }
+        .contact .contact-content span{
+            font-size: 0.8em;
+            font-weight: 200;
+        }
+        .contact div:last-child .contact-icon i {
+            height: 40px;
+            width: 40px;
+            padding: 10px;
+            border-bottom: 0;
+            border-right: 1px solid #eee;
         }
     </style>
 </head>
@@ -149,7 +181,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="education">
-                            <p class="description"><i class="glyphicon glyphicon-bookmark"></i>&nbsp;EDUCATION</p>
+                            <h4 class="description"><i class="glyphicon glyphicon-bookmark"></i>&nbsp;EDUCATION</h4>
                             <ul id="education-ul">
                                 <li>
                                     <div class="year">1990</div>
@@ -186,7 +218,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="experience">
-                            <p class="description"><i class="glyphicon glyphicon-bookmark"></i>&nbsp;EXPERIENCE</p>
+                            <h4 class="description"><i class="glyphicon glyphicon-bookmark"></i>&nbsp;EXPERIENCE</h4>
                             <div class="row">
                                 <div class="col-lg-3">
                                     <div class="company-time">
@@ -221,7 +253,31 @@
             </div>
             <div class="col-lg-5">
                 <div class="row">
-                    <div class="col-lg-12"></div>
+                    <div class="col-lg-12">
+                        <div class="contact">
+                            <h4 class="description"><i class="glyphicon glyphicon-bookmark"></i>&nbsp;CONTACT</h4>
+                            <div class="row">
+                                <div class="col-lg-2 contact-icon"><i class="glyphicon glyphicon-earphone"></i></div>
+                                <div class="col-lg-10 contact-content"><p>500 345 242</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 contact-icon"><i class="glyphicon glyphicon-envelope"></i></div>
+                                <div class="col-lg-10 contact-content"><p>office@kamsolutions.pl</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 contact-icon"><i class="glyphicon glyphicon-scissors"></i></div>
+                                <div class="col-lg-10 contact-content"><p>Twitter<br><span>https://twitter.com/WordPress</span></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 contact-icon"><i class="glyphicon glyphicon-font"></i></div>
+                                <div class="col-lg-10 contact-content"><p>Facebook<br><span>https://www.facebook.com/facebook</span></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-2 contact-icon"><i class="glyphicon glyphicon-bold"></i></div>
+                                <div class="col-lg-10 contact-content"><p>Skype<br><span>kamsolutions.pl</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12"></div>
