@@ -9,34 +9,61 @@
             <div>
                 <span>考试科目:统一建模语言UML</span>
                 <span>时间：100分钟</span>
-                <span>得分：</span>
+                <span>得分：<input type="text"/></span>
             </div>
             <div>
-                <span>班级:</span>
-                <span>学号:</span>
-                <span>姓名:</span>
+                <span>班级:<input type="text"/></span>
+                <span>学号:<input type="text"/></span>
+                <span>姓名:<input type="text"/></span>
             </div>
         </div>
 
         <div>
             <div>
                 <h4>一.填空题</h4>
-                <p>1.UML的中文全称是:</p>
-                <p>2.UML最突出的特征是：</p>
+                <p>1.UML的中文全称是:<input type="text"/></p>
+                <p>2.UML最突出的特征是：<input type="text"/></p>
             </div>
-            <>
+            <div>
                 <h4>二.选择题</h4>
                 <p>1.UML与软件工程的关系是：</p>
-                <input name="relation" type="radio">(A)UML就是软件工程</input><br>
-                <input name="relation" type="radio">(B)UML参与到软件工程设计的几个阶段</input><br>
-                <input name="relation" type="radio">(C)UML与软件工程无关</input><br>
-                <input name="relation" type="radio">(D)UML是软件工程的一部分</input><br>
+                <label><input name="relation" type="radio" value="1"/>(A)UML就是软件工程</label><br>
+                <label><input name="relation" type="radio" value="2"/>(B)UML参与到软件工程设计的几个阶段</label><br>
+                <label><input name="relation" type="radio" value="3"/>(C)UML与软件工程无关</label><br>
+                <label><input name="relation" type="radio" value="4"/>(D)UML是软件工程的一部分</label><br>
 
                 <p>2.Java语言支持</p>
-                <input name="lauguage" type="radio">(A)单继承</input><br>
-                <input name="lauguage" type="radio">(B)多继承</input><br>
-                <input name="lauguage" type="radio">(C)单继承和多继承都支持</input><br>
-                <input name="lauguage" type="radio">(D)单继承和多继承都不支持</input><br>
+                <label><input name="lauguage" type="radio"/>(A)单继承</label><br>
+                <label><input name="lauguage" type="radio"/>(B)多继承</label><br>
+                <label><input name="lauguage" type="radio">(C)单继承和多继承都支持</label><br>
+                <label><input name="lauguage" type="radio"/>(D)单继承和多继承都不支持</label><br>
+            </div>
+            <div>
+                <h4>三.多选题</h4>
+                <p>1.用例的粒度分为以下那几种。</p>
+                <label><input type="checkbox" name="lidu" value="1"/>(A)概述级</label>
+                <label><input type="checkbox" name="lidu" value="2"/>(B)需求级</label>
+                <label><input type="checkbox" name="lidu" value="3"/>(C)用户目标级</label>
+                <label><input type="checkbox" name="lidu" value="4"/>(D)子功能级</label>
+                <p>2.类图由以下哪三部分组成。</p>
+                <label><input type="checkbox" name="pation" value="1"/>(A)名称</label>
+                <label><input type="checkbox" name="pation" value="2"/>(B)属性</label>
+                <label><input type="checkbox" name="pation" value="3"/>(C)操作</label>
+                <label><input type="checkbox" name="pation" value="4"/>(D)方法</label>
+            </div>
+            <div>
+                <h4>四.判断题</h4>
+                <p>1.用例图只是用于与客户沟通与交流？</p>
+                <label><input name="com" type="radio"/>是</label>
+                <label><input name="com" type="radio"/>否</label>
+                <p>2.在状态图上，终于状态在可以任意出现多个？</p>
+                <label><input name="state" type="radio"/>是</label>
+                <label><input name="state" type="radio"/>否</label>
+            </div>
+            <div>
+                <h4>五.简答题</h4>
+                <p>1.简述什么是模型以及模型的表现形式</p>
+                <textarea></textarea>
             </div>
         </div>
     </body>
